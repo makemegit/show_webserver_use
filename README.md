@@ -1,2 +1,2 @@
 # show_webserver_use
-show_webserver_use
+You need "lynx" and "mysqladmin"
