@@ -10,3 +10,5 @@ lynx -dump -width 500 http://127.0.0.1/whm-server-status | awk '{print $11}' | s
 echo "---"
 echo "Mysql use:"
 mysqladmin processlist
+echo "DISK IOwait"
+iotop -qbon1 | grep -vi "total\|actual\|command" | awk '{print $10" "$11" "$12}'
