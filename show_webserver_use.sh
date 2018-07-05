@@ -1,3 +1,4 @@
+hostname
 w | head -n1
 echo "---"
 top -b -d1 -n1| grep -i "Cpu(s)" | awk '{print "CPU:" $2 "%"}' | head -n1
