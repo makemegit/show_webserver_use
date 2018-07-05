@@ -3,9 +3,9 @@ echo "---"
 top -b -d1 -n1| grep -i "Cpu(s)" | awk '{print "CPU:" $2 "%"}' | head -n1
 free -h | grep -i mem | awk '{print "Free Ram: "$7}'
 echo "---"
-echo "Connections ont port 80:"
+echo "Connections on port 80:"
 netstat -anp |grep 80 |wc -l
-echo "Connections ont port 443:"
+echo "Connections on port 443:"
 netstat -anp |grep 443 |wc -l
 echo "---"
 echo "Most hits from ApacheStatus:"
