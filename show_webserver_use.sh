@@ -10,7 +10,7 @@ echo "Connections on port 443:"
 netstat -anp |grep 443 |wc -l
 echo "---"
 echo "Most hits from ApacheStatus:"
-lynx -dump -width 500 http://127.0.0.1/whm-server-status | awk '{print $11}' | sort | uniq -c | sort -n | tail -n10
+lynx -dump -width 500 http://127.0.0.1/whm-server-status | awk '{print $12}' | sort | uniq -c | sort -n | tail -n10
 echo "---"
 echo "Mysql use:"
 mysqladmin processlist
