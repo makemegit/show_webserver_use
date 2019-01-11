@@ -1,2 +1,3 @@
 # show_webserver_use
-You need "lynx" and "mysqladmin"
+1. You need "lynx" and "mysqladmin"
+2. For lightspeed servers, replace user:pass with your username and password.
